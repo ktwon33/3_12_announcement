@@ -30,13 +30,13 @@ try:
 
     # 공지사항 표시
     st.title("🐀 공지사항")
-    st.text("Google Sheets에서 가져온 정보")
+    st.caption("Google Sheets에서 가져온 정보")
     notice_df = pd.DataFrame(notice_data)
     st.write(notice_df)
 
     # 수행평가 표시
     st.title("🐀 수행평가")
-    st.text("Google Sheets에서 가져온 정보")
+    st.caption("Google Sheets에서 가져온 정보")
     eval_df = pd.DataFrame(eval_data)
     st.write(eval_df)
 except Exception as e:
