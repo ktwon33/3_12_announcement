@@ -29,19 +29,19 @@ try:
     eval_data = eval_sheet.get_all_records()
 
     # 공지사항 표시
-    st.title("🐀공지사항")
+    st.title("🐀 공지사항")
     notice_df = pd.DataFrame(notice_data)
     st.write(notice_df)
 
     # 수행평가 표시
-    st.title("🐀수행평가")
+    st.title("🐀 수행평가")
     eval_df = pd.DataFrame(eval_data)
     st.write(eval_df)
 except Exception as e:
     st.error(f"Google Sheets 연결 오류: {e}")
 
 # 공지사항 등록
-st.title("✏️공지사항 등록")
+st.title("✏️ 공지사항 등록")
 content = st.text_input("내용(공지)")
 date1 = st.text_input("일시(공지)")
 
@@ -53,7 +53,7 @@ if st.button("공지사항 등록"):
         st.error(f"등록 실패: {e}")
 
 # 수행평가 등록
-st.title("✏️수행평가 등록")
+st.title("✏️ 수행평가 등록")
 subject = st.text_input("과목(수행)")
 content_a = st.text_area("내용(수행)")
 date2 = st.text_input("일시(수행)")
