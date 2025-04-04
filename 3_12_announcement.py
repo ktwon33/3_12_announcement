@@ -24,12 +24,12 @@ try:
     notice_data = notice_sheet.get_all_records()
     eval_data = eval_sheet.get_all_records()
 
-    st.title("🐀 공지사항")
+    st.title("🐸 공지사항")
     st.caption("Google Sheets에서 가져온 정보")
     notice_df = pd.DataFrame(notice_data)
     st.write(notice_df)
 
-    st.title("🐀 수행평가")
+    st.title("🐸 수행평가")
     st.caption("Google Sheets에서 가져온 정보")
     eval_df = pd.DataFrame(eval_data)
     st.write(eval_df)
